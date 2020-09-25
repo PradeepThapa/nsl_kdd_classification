@@ -15,7 +15,7 @@ Algorithm	Accuracy	Precision	Recall	F1	Time (s)
 8. XGBoost	77.1%	82%	77%	74%	494
 9. Voting Classifier	77%	82%	77%	73%	30.1
 10. Lightgbm	76%	84%	63%	72%	188
-**11. Catboost	81%	85%	81%	77%	71.2**
+11. **Catboost	81%	85%	81%	77%	71.2**
 
 
 KDD dataset has 5 different classes which are benign, dos, probe, r2l and u2r. All 5 classes are not balanced as benign and dos have far more samples than r2l and u2r which could be the issue related to oversampling. After trying several machine learning algorithms, Catboost came out on top with the **81%** accuracy. Most of the other algorithms were around 78%. This could be because catboost uses unique gradient boosting technique to trees.
